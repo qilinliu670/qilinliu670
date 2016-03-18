@@ -23,7 +23,7 @@
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
-		
+
 		<a href="#bear">To the bear!</a>
 		<b class="helloWorld txt">Hello World!</b>
 		<h1>My name is Qilin!</h1>
@@ -57,7 +57,22 @@
 		<br>
 		<img class="rat" src="http://cdni.wired.co.uk/1920x1280/o_r/rat_6.jpg" width="800px">
 
+		<button class="btn">Click me!!!</button>
+
 		<br><br><br><br><br><br><br><br><br><br><br>
+
+		<script>
+
+			$(document).keypress(function(e) {
+				if(e.which === 32) {
+					alert('Space!!')
+				}
+			})
+
+			$('.btn').click(function() {
+				alert('hello');
+			});
+		</script>
 
 		<script src="jquery-2.2.0.min.js"></script>
 		<script src="bootstrap.min.js"></script>
